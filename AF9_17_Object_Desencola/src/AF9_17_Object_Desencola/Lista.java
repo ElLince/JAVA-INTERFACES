@@ -51,10 +51,9 @@ public class Lista implements Cola {
        }
 
        public Object eliminarPrincipio(){
-           Object o;
            System.arraycopy(tabla, 1, tabla, 0, tabla.length-1);
-           o=Arrays.copyOf(tabla,tabla.length-1);           
-           return o;
+           tabla=Arrays.copyOf(tabla,tabla.length-1);           
+           return tabla;
       }
 
        
